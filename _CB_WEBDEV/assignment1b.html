@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            /* height:100vh; */
+            display:flex;
+            justify-content:center; 
+            align-items: center;           
+        }
+        .container{
+            background-color: rgb(237, 250, 246);
+            height:400px;
+            width:500px;
+            padding:3%;
+            justify-content:space-between;
+            display:grid;
+            grid-template-rows:repeat(5,1fr);
+            grid-template-columns:repeat(5, 1fr);
+            gap:20px 20px;
+            grid-template-areas:
+            "one one one one one"
+            "two two three three three"
+            "two two three three three"
+            "two two three three three"
+            "six six six six six"
+            
+        }
+        .box{
+            background-color: rgb(1, 93, 47);
+        }
+        .box-1{
+            grid-area: one; 
+            display:flex;
+            padding:10px;
+            justify-content:space-between;
+        }
+        .box-2{
+            grid-area: two; 
+        }
+        .box-3{
+            background-color: rgb(237, 250, 246);
+            grid-area: three; 
+            display:grid;
+            grid-template-rows:repeat(3,52px 70px 70px);
+            /* align-content: space-between; */
+            gap: 20px;
+        }
+        .rowbox{
+        background-color: rgb(1, 93, 47);
+        }        
+        .box-4{
+            grid-area: six; 
+            display:flex;
+            padding:10px;
+            justify-content:center;
+            gap:20px;
+        }
+        .boxa,.boxb{
+            background-color: antiquewhite;
+            height:100%;
+            width:50px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">
+            <div class="boxa"></div>
+            <div class="boxa"></div>
+
+        </div>
+        <div class="box box-2"></div>
+        <div class="box box-3">
+            <div class="rowbox "></div>
+            <div class="rowbox "></div>
+            <div class="rowbox "></div>
+        </div>
+        <div class="box box-4">
+            <div class="boxb"></div>
+            <div class="boxb"></div>
+            <div class="boxb"></div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
