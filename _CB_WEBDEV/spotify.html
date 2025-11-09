@@ -10,8 +10,16 @@
             padding:0;
             font-family: "Roboto", sans-serif;
         }
+        body{
+          background-color: rgb(25, 24, 24);
+
+        }
+        a{
+            color:white;
+            text-decoration: none;
+        }
         .navbar{
-          background-color: rgb(36, 36, 36);
+          background-color: rgb(24, 24, 24);
           height:60px;
           width:100%;
           display:flex;
@@ -19,7 +27,6 @@
           flex-wrap:no-wrap;
           justify-content:space-between;
           align-items:center;
-          border-bottom: 1px solid rgb(229, 229, 229);
           position: static;
           top:0;
           left:0;
@@ -90,8 +97,7 @@
         }
         .nav:hover .tooltip-s{
             visibility: visible;   
-        }
-        
+        }        
         .nav1-2{
             padding:6px;
             height:30px;
@@ -180,10 +186,11 @@
         .nav2-5{
             background-color: white;
             color: black;
-            padding: 9px;
-            padding-left: 13px;
-            padding-right: 13px;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
             border-radius: 40px;
+            font-weight: bolder;
         }
         .A1:hover,.A2:hover,.A3:hover,.nav2-3:hover,.nav2-4:hover{
             color: white;
@@ -198,8 +205,369 @@
             padding: 11px;
             padding-left: 14px;
             padding-right: 14px;
+        }
+        footer{
+          background:linear-gradient(90deg, #fa32d5, #b300ff, #541af4, #00ccff);
+          height:55px;
+          width:98%;
+          display:flex;
+          flex-direction:row;
+          flex-wrap:no-wrap;
+          justify-content:space-between;
+          align-items:center;
+          position: fixed;
+          bottom:0%;
+          left:0%;
+          padding: 5px;
+          margin: 0.5%;
 
         }
+        .f1{
+            /* background-color: aqua; */
+            margin-left:10px;
+            display:flex;
+            flex-direction:column;
+            flex-wrap:no-wrap;
+            justify-content:center;
+            align-items:flex-start;
+            width:80%;
+            gap: 8px;
+            color: white;
+        }
+        .f1-1{
+            font-weight: bolder;
+            cursor:pointer;
+        }
+        .f1-2{
+            cursor:pointer;
+        }
+        .f2{
+            /* background-color: aqua; */
+            margin-right:30px;
+            background-color: white;
+            padding: 13px;
+            border-radius: 40px;
+            font-weight: bolder;
+        }
+        .f2:hover{
+            background-color: rgb(230, 230, 230);
+            margin: -1px;
+            padding: 12px;
+            margin-right:30px;
+        }
+        .section{
+          background-color: rgb(212, 21, 21);
+          width:100%;
+          height:617px;          
+          display:flex;
+          flex-direction:row;
+          flex-wrap:no-wrap;
+          justify-content:space-between;
+          align-items:flex-start;
+          color: white;
+          margin:0.5%;
+        }
+        .sec1 svg{
+            fill: white;
+        }
+        .sec1{
+            background-color: rgb(58, 58, 58);
+            color: white;
+            width: 24%;
+            height:587px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding:15px;
+            gap:30px;
+            border-radius: 10px;
+           
+        }
+        .sec1-1{
+            /* background-color: #9385ba; */
+            color: white;
+            width: 97%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding:5px;
+            margin-bottom: 20px;        
+        }
+        .sec1-2{
+            background-color: rgb(83, 83, 83);
+            color: white;
+            width: 95%;
+            height:100px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding:12px;
+            gap:12px;
+            border-radius: 10px;
+        }
+        .secb{
+            width:30px;
+            position: relative;
+        }
+        .tooltip-P{
+            visibility: hidden;            
+            background-color: rgb(125, 124, 124);
+            padding: 4px;
+            position: absolute;
+            top:-50px;
+            left:-30px; 
+            width:  140px;  
+            font-size: smaller;   
+        }
+        .secb:hover .tooltip-P{
+            visibility: visible;   
+        }
+        .secb:hover{
+            height:30px;
+            background-color: rgb(73, 72, 72);
+            border-radius: 40px;
+        }
+        .secb svg{
+            padding:5px;        
+            width: 15px;
+            margin-left:3px;
+            margin-top: 1px;
+            cursor: pointer;
+        }
+
+        .secc{
+            font-weight: bolder;
+        }
+        
+        .sece{
+            background-color: white;
+            border-radius: 40px;
+            color: black;
+            font-weight: bold;
+            padding: 7px;
+            margin-top: 6px;
+            margin-bottom:5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+        .sece:hover{
+            background-color: rgb(201, 200, 200);
+            padding: 10.5px;
+            margin-top: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .sec1-4{
+            /* background-color: rgb(98, 98, 98); */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap:15px;
+        }
+        .secf{
+            margin-top: 40px;
+            /* background-color: rgb(98, 98, 98); */
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap:15px;
+            flex-wrap: wrap;
+            font-size:12px;
+        }
+        .s-1{
+            cursor: pointer;
+
+        }
+        .secg{
+            font-weight: bolder;
+            font-size:13px;
+            cursor: pointer;
+        }
+        .secg:hover{
+            text-decoration: underline;
+        }
+        .sec1-5{
+            display: flex;
+            gap:10px;
+            border:2px solid white;
+            border-radius: 40px;
+            padding: 8px;
+            padding-left: 14px;
+            padding-right: 12px;
+            width: 85px;
+            margin-top: 5px;
+            font-weight: bolder;
+        }
+        .sec2{
+            height:587px;
+            background-color: rgb(58, 58, 58);
+            color: white;
+            width: 70.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding:15px;
+            gap:20px;
+            margin-right:1%;
+            border-radius: 10px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .sec2::-webkit-scrollbar{
+            display:hidden;        
+        }
+        .sec2-1{
+            /* background-color: #9385ba; */
+            color: white;
+            width: 99%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding:8px;
+            margin-bottom: 20px;        
+        }
+        .sec2-a{
+            /* background-color: #b2ba85; */
+            color: white;
+            width: 99%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding:5px;
+            margin-bottom: 10px;   
+                 
+        }
+        .s2-a:hover{
+            text-decoration: underline;
+        }        
+        .s2-a{
+            font-weight: bold;
+            font-size: x-large;
+        }
+        .A img{
+            width:200px;
+            height:200px;
+            border-radius: 10px;
+        }
+        .sec2-b{
+            display:flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: auto;  
+            white-space: nowrap;
+            cursor:pointer;
+        }
+        .sec2-b::-webkit-scrollbar {
+            display: none;
+        }
+
+        .s2-c{
+            display: flex;
+            flex-direction: column;
+            gap:8px;
+            border-radius: 10px;
+            padding: 10px;
+            position: relative;
+        }
+        .s2-c:hover{
+            background-color: rgb(81, 80, 80);
+
+
+        }
+        .A1{
+            fill:white;
+            background-color: grey;
+            border-radius: 40px;
+            padding:5px;
+            height:20px;
+            width:20px;
+            position: absolute;
+            top:130px;
+            visibility:hidden;
+        }
+        /* .sec2-b:hover .A1{
+            visibility: visible;
+        } */
+        .A2{
+            background-color: rgb(2, 156, 2);
+            border-radius: 40px;
+            padding:5px;
+            width:25px;
+            height:25px;
+            position: absolute;
+            top:130px;
+            left:160px;
+            visibility: hidden;
+        }
+        
+        .tooltip-A{
+            visibility: hidden;            
+            background-color: rgb(51, 51, 51);
+            color: white;
+            padding: 5px;
+            position: absolute;
+            top:-35px;
+            left:-55px;  
+            border-radius: 5px;
+            font-size: small;
+        }
+        .A2:hover .tooltip-A{
+            visibility: visible;
+        }
+        .s2-c:hover .A2{
+            visibility: visible;
+        }
+        .B{
+            display: flex;
+            flex-direction: column;
+            padding:5px;
+            gap:5px;
+        }
+        .B1{
+            font-weight: bold;
+        }
+        .B1:hover{
+            text-decoration: underline;
+        }
+        .B2:hover{
+            text-decoration: underline;
+        }
+
+        .sec2-2{
+            /* background-color: #9385ba; */
+            color: white;
+            width: 99%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding:8px;
+            margin-bottom: 20px;  
+            margin-top: -28px;      
+        }
+        .sec2-2 .s2-a{
+            font-weight: 550;
+        }
+        .sec2-2 img{
+            border-radius: 50%;
+            width: 170px;
+            height:170px;
+        }
+        #sec2-3 img{
+            width:190px;
+            height:190px;
+        }
+
+        
+
     </style>
 </head>
 <body>
@@ -259,17 +627,655 @@
 
 <!-- --------------------------------- MIDDLE START --------------------------------- -->
  <div class="section">
-    <div class="sec-1"></div>
-    <div class="sec-1"></div>
- </div>
+    <div class="sec1">
+        <div class="sec1-1">
+            <div class="seca">Your Library</div>
+            <div class="secb">
+                <svg data-encore-id="icon" role="img" aria-hidden="true"  class="e-91000-icon e-91000-baseline"viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75"></path></svg>
+                <div class="tooltip-P">Create playlist or folder</div>
+            </div>
+        </div>
+        <div class="sec1-2">
+            <div class="secc">Create your first playlist</div>
+            <div class="secd">It's easy, we'll help you</div>
+            <div class="sece">Create playlist</div>
+        </div>
+        <div class="sec1-2">
+            <div class="secc">Let's find some podcast to follow</div>
+            <div class="secd">We will keep you updated on every episodes</div>
+            <div class="sece">Browse podcasts</div>
+        </div>
+        <div class="sec1-4">
+            <div class="secf">
+                <div class="s-1">Legal</div>
+                <div class="s-1">Safety and privacy Center</div>
+                <div class="s-1">Privacy policy</div>
+                <div class="s-1">Cookie setting</div>
+                <div class="s-1">About ads</div>
+                <div class="s-1">Accessibility</div>
+            </div>
+            
+            <a href="" class="secg">Cookies</a>
+        </div>
+        <div class="sec1-5">
+            <svg data-encore-id="icon" role="img" aria-hidden="true" width="16px"   class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M8.152 16H8a8 8 0 1 1 .152 0m-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296M4.877 7.25c.062-1.771.34-3.386.773-4.624q.148-.427.329-.806a6.51 6.51 0 0 0-4.436 5.43zm-3.334 1.5a6.51 6.51 0 0 0 4.436 5.43 8 8 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129zm5.048 0c-.061 1.771-.339 3.386-.772 4.624q-.123.353-.268.674a6.5 6.5 0 0 0 4.071-5.298zm3.031-1.5a6.51 6.51 0 0 0-4.071-5.298q.145.322.268.674c.433 1.238.711 2.853.772 4.624z"></path></svg>
+            <p>English</p>
+        </div>
+    </div>
+
+
+
+    <div class="sec2">
+        <div class="sec2-1">
+            <div class="sec2-a">
+                <a href="" class="s2-a">Trending songs</a>
+                <div class="s2-b">Show all</div>
+            </div>
+            <div class="sec2-b">                
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="song-cover.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Aria Davis Div</a>
+                        <a href="" class="B2">Rabbit</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="sec2-2">
+            <div class="sec2-a">
+                <a href="" class="s2-a">Popular Artists</a>
+                <div class="s2-b">Show all</div>
+            </div>
+            <div class="sec2-b">                
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://tse3.mm.bing.net/th/id/OIP.4c80zDUabs8s-mB3zUlZjQHaJQ?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Arman Malik</a>
+                        <div class="B2">Rabbit</div>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+        </div>
+
+        <div class="sec2-1" id="sec2-3">
+            <div class="sec2-a">
+                <a href="" class="s2-a">Popular Albums and Singles</a>
+                <div class="s2-b">Show all</div>
+            </div>
+
+            <div class="sec2-b">                
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+                <div class="s2-c">                    
+                    <div class="A"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/e8/8b/cfe88b2c-7971-a4e3-99dd-3bddf59cd721/840214493089.png/1200x1200bf-60.jpg" alt="song related profile picture"></div>
+                    <div class="A1" >
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" style="--encore-icon-fill: var(--text-base, #000000); --encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0"></path></svg>
+                    </div>                    
+                    <div class="A2">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="e-91000-icon e-91000-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606"></path></svg>
+                        <div class="tooltip-A">Play Aria Davis Div</div>
+                    </div>
+
+                    <div class="B">
+                        <a href="" class="B1">Album of top songs</a>
+                        <a href="" class="B2">Jubin Nautiyal</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="sec2-4"></div>
+        <div class="sec2-5"></div>
+        <div class="sec2-6"></div>
+        <div class="sec2-7"></div>
+        
+    </div>
+ 
+</div>
 
 <!-- --------------------------------- MIDDLE END --------------------------------- -->
 
 <!-- --------------------------------- FOOTER START --------------------------------- -->
 
-<footer>
+<footer class="signup">
+    <div class="f1">
+        <div class="f1-1">Preview of Spotify</div>
+        <div class="f1-2">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</div>
+    </div>
+    
+    <div class="f2">Sign up free</div>
     
 </footer>
 <!-- --------------------------------- FOOTER END --------------------------------- -->
 </body>
 </html>
+
+ 
+
+
