@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Project</title>
+    <style>
+        body{
+            background-image: url('./image.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .ball{
+            background-color: darkgreen;
+            border: 4px solid black;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            left: 900px;
+            top: 400px;
+            animation-name: bounce;
+            animation-duration:2s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count:infinite;
+        }
+        @keyframes bounce{
+            0%{
+                top: 400px;
+            }
+            
+            50%{
+                top:650px;
+                height:4%;
+            }
+            
+            100%{
+                top: 400px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Project Bounce</h1>
+
+    <div class="ball"></div>
+    <div class="ball"></div>
+    
+</body>
+</html>
