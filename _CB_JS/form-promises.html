@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submission with Promises</title>
+   <title>Form Submission with Promises</title>
 </head>
 
 <body>
@@ -22,10 +20,8 @@
         let form = document.getElementById("myForm");
         let message = document.getElementById("msg");
 
-        // Function that returns a Promise
         function submitData(data) {
             return new Promise((resolve, reject) => {
-                // Simulate server delay
                 setTimeout(() => {
                     if (data.name && data.email.includes("@")) {
                         resolve("Form submitted successfully!");
@@ -36,7 +32,6 @@
             });
         }
 
-        // On form submit
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
