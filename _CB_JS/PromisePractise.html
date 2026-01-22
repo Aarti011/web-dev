@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BPIT</h1>
+    <h2></h2>
+
+    <script>
+        let a=5, b=6;
+        let pp=new Promise((resolve, reject)=>{
+            if(a+b==10)resolve("done");
+            else{reject("nooooo")}
+        });
+        pp.then((msg)=>{
+            console.log(msg);
+        });
+        pp.catch((error)=>{
+            console.log(error);
+        });
+
+
+
+
+        let p=new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve("successful")
+            }, 2000);
+        });
+        p.then((msg)=>{
+            console.log(msg);
+        });
+        p.catch((error)=>{
+            console.log(error);
+        });
+        p.finally(()=>{
+            console.log("completed");
+        });
+    </script>
+</body>
+</html>

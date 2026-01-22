@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+body{
+  background: url('Space.png') ;
+  background-repeat: repeat-x;
+  background-size: cover;
+  animation: moveBg 5s linear ;
+  background-color: rgb(147, 200, 200);
+  
+}
+
+@keyframes moveBg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1000px 0;
+  }
+}
+.cody{
+    width: 10%;
+    position:fixed;
+    top:50%;
+    left:-13%;
+    animation: moveCody 3s cubic-bezier(1, 0,1,1);
+}
+@keyframes moveCody{
+    0%{
+        width: 8%;
+        left:-10%;
+    }
+
+    100%{
+        left:50%;
+        width:0%;
+
+    }
+}
+.rocket{
+    width: 13%;
+    position:fixed;
+    top: 50%;
+    left:33%;
+}
+
+
+</style>
+</head>
+<body>
+    <img src="Cody.png" alt="astronaut image" class="cody">
+    <img src="rocket.png" alt="Rocket image" class="rocket">
+
+    
+</body>
+</html>

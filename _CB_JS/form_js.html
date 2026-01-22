@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.bing.com/search?qs=AS&pq=google&sk=CSYN1UAS8FT4AS9&sc=25-6&pglt=41&q=google&cvid=3182ae723bff409bb6efde11d593db9b&gs_lcrp=EgRlZGdlKgYIABAAGEAyBggAEAAYQDIGCAEQLhhAMgYIAhAAGEAyBggDEAAYQDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRhBMgYICBBFGEHSAQg3MTIwajBqMagCALACAA&FORM=ANNTA1&PC=PCMEDGEDP" method="GET">
+    <label>login id</label>
+    <input type="text" placeholder="Enter your login id"> 
+    <button type="submit"> submit</button>
+    </form>
+    <ul> </ul>
+   
+   <script>
+        let box=document.querySelector('ul');
+        // let b=document.createElement('li');
+        // b.innerHTML="Hello";
+        // box.appendChild(b);
+
+        for (let i = 0; i < 5; i++) {
+            setTimeout(()=>{
+            let b=document.createElement('li');
+            b.innerHTML="Hello";
+            box.appendChild(b);
+            },2000);
+            setTimeout(()=>{
+            let d=document.createElement('li');
+            d.innerHTML="Hello";
+            box.appendChild(d);
+            },4000);
+
+            
+        }
+        setTimeout(()=>{console.log("Done")},5000);
+        setTimeout(()=>{console.log("Done")},10000);
+        setTimeout(()=>{console.log("Done")},15000);
+
+
+   </script> 
+</body>
+</html>

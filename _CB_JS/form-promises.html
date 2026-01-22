@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Form Submission with Promises</title>
+</head>
+
+<body>
+
+    <h2>Form Submission Using Promises</h2>
+
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Enter Name" required><br><br>
+        <input type="email" id="email" placeholder="Enter Email" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3 id="msg"></h3>
+
+    <script>
+        let form = document.getElementById("myForm");
+        let message = document.getElementById("msg");
+
+        function submitData(data) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (data.name && data.email.includes("@")) {
+                        resolve("Form submitted successfully!");
+                    } else {
+                        reject("Invalid input. Submission failed.");
+                    }
+                }, 2000);
+            });
+        }
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            message.innerText = "Submitting... Please wait.";
+
+            let data = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value
+            };
+
+            submitData(data)
+                .then(result => {
+                    message.style.color = "green";
+                    message.innerText = result;
+                })
+                .catch(error => {
+                    message.style.color = "red";
+                    message.innerText = error;
+                });
+        });
+    </script>
+
+</body>
+</html>
