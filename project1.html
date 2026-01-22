@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            
+        }
+        .container{
+            padding:15px;
+            margin:100px;
+            height:400px;
+            width:300px;
+            border-radius: 20px;
+            /* border:2px solid black; */
+            background-color: rgb(46, 46, 46);
+            display:grid;
+        }
+        .box1{
+            height:80px;
+            /* width:270px; */
+            border-radius: 15px;
+            border:2px solid black;
+        }
+        input{
+            height:100%;
+            width:100%;
+            border-radius: 15px;
+            text-align: end;
+            font-size: 50px;
+        }
+        .box2{
+            height:300px;
+            margin-top:10px;
+            /* border:2px solid black; */
+            display:grid;
+            gap: 10px;
+        }
+        .box{
+            height:50px;
+            /* border:1px solid black; */
+            display:flex;
+            gap:2px;
+            align-items: center;
+            justify-content: center;            
+        }
+        .b1{
+            font-weight:bolder;
+            color:white;
+            height:50px;
+            width:70px;
+            border-radius: 5px;
+            /* border:2px solid black; */
+            background-color: rgb(73, 73, 73);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <input  id="in" type="text" placeholder="0">
+        </div>
+        <div class="box2">
+            <div class="box boxa">
+                <button class="b1" onclick="append('7')">%</button>
+                <button class="b1" onclick="del()">CE</button>
+                <button class="b1" onclick="cleanit()">C</button>
+                <button class="b1" onclick="del()">X</button>
+            </div>
+            <div class="box boxb">
+                <button class="b1" onclick="append('7')">7</button>
+                <button class="b1" onclick="append('8')">8</button>
+                <button class="b1" onclick="append('9')">9</button>
+                <button class="b1" onclick="append('/')">/</button>
+            </div>
+            <div class="box boxc">
+                <button class="b1" onclick="append('4')">4</button>
+                <button class="b1" onclick="append('5')">5</button>
+                <button class="b1" onclick="append('6')">6</button>
+                <button class="b1" onclick="append('-')">-</button>
+            </div>
+            <div class="box boxd">
+                <button class="b1" onclick="append('1')">1</button>
+                <button class="b1" onclick="append('2')">2</button>
+                <button class="b1" onclick="append('3')">3</button>
+                <button class="b1" onclick="append('+')">+</button>
+            </div>
+             <div class="box boxe"> 
+                <button class="b1" onclick="append('')"><sup>+</sup>/<sub>-</sub></button>
+                <button class="b1" onclick="append('0')">0</button>
+                <button class="b1" onclick="append('.')">.</button>
+                <button class="b1" onclick="calc()">=</button>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+<script>
+    const val=document.querySelector("#in");   
+
+    function cleanit(){
+        let result=val.value;
+        result=result.slice(0,-1);
+        val.value=result;
+    };
+    function del(){
+        val.value="";
+    };
+    function append(num){
+        val.value+=num;
+    };
+    function calc(){
+        val.value=eval(val.value);
+    };
+
+    
+</script>
+</body>
+</html>
